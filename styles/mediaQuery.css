@@ -1,0 +1,38 @@
+@media screen and (min-width:576px) and (max-width:992px) {
+    .nav,
+    .nav-menu{
+        flex-direction: column;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .nav,
+    .nav-menu{
+        flex-direction: column;
+    }.nav-menu{
+        /* margin-top: 30px; */
+        margin-bottom: 15px;
+    }
+    
+    .nav{
+        /* margin-left: 200px; */
+    }
+    .nav-menu li{
+        margin-bottom: 10px;
+    }
+    .btn{
+        margin-top: 10px;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-left{
+        width: 100%;
+    }
+    .banner-right{
+       width: 100%;
+    }
+    .banner-btn1{
+        margin-bottom: 10px;
+    }
+}
