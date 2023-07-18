@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Manrope&family=Open+Sans:ital,wght@1,500&family=Poppins:wght@400;500&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+    background-color: #fff;
+}
+header{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+   
+}
+.nav-logo img{
+    width: 5rem;
+    height: 3rem;
+    margin-right: 20px;
+}
+.logo-title{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+span{
+    color: #FF42A5;
+}
+.nav-menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.nav-menu li{
+    text-decoration: none;
+    margin-right: 4rem;
+}
+.btn-menu{
+    padding: 10px 30px 10px 10px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    margin-left: 20px;
+   }
+   .fa-youtube{
+    color: red;
+   }
+   /* .fa-tiktok{
+    background-image: linear-gradient(text-decoration #08FFF9 #F00044 #000000 );
+    color: #08FFF9 #F00044 #000000;
+   } */
+.banner{
+    background-image: url(../images/Group14.png);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    /* width: 1140px; */
+    margin: 0 auto;
+    gap: 68px;
+
+}
+.banner-left{
+    /* width: 50%; */
+    /* background-image: url(../images/Group14.png); */
+}
+.banner-right{
+    /* width: 50%; */
+}
