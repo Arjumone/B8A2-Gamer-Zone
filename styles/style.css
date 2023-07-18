@@ -55,7 +55,7 @@ span{
 .banner{
  display: flex;
  justify-content: space-between;
- height: 400px;
+ /* height: 400px; */
  background-image: url(../images/Group14.png);
  background-repeat: no-repeat;
  gap: 60px;
@@ -113,6 +113,7 @@ span{
     border: none;
 }
 .online-section{
+    
    margin-top: 20px; 
 }
 .online-content{
@@ -128,14 +129,70 @@ span{
 }
 .online-game-container{
     display: flex;
-    justify-content: space-around;
-    /* width: 1140px;
-    margin: 0 auto; */
-    /* margin: 20px 200px 20px 200px; */
+    margin: 20px 200px 0px 200px;
     gap:24px;
 }
 .card img{
     width: 100%;
     height: 100%;
     
+}
+/* .play-section{
+    width: 1140px;
+    margin: 0 auto;
+} */
+.play-container{
+    display: flex;
+    /* margin-top: 0px 250px 50px; */
+    justify-content: center;
+    align-items: center;
+    gap: 240px;
+    margin: 20px 240px;
+  
+    
+}.play-content{
+   width: 50%;
+}
+.play-img{
+    width: 50%;
+}
+.play-img .play-img1{
+    height: 100%;
+    width: 100%;
+    
+    position: relative;
+    bottom: -200px;
+    left: 100px;
+}
+.play-img2 img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    
+}
+
+footer{
+    margin-top: 300px;
+    background-color: black;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.footer-img{
+    width: 4rem;
+    height: 2rem;
+}
+.footer h2 span{
+    color: #ff42a5;
+    
+}
+.footer h2{
+    font-weight: 700;
+    font-size: 2rem;
+}
+.footer-name{
+    color: white;
 }
