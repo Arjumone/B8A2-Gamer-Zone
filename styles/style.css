@@ -85,9 +85,9 @@ span{
     font-weight: 500;
 }
 .fa-user-group{
-    color: white;
-    background-color: black;
-    
+    background-image: linear-gradient(to bottom,white,black);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 .btn i{
     margin-right: 5px;
