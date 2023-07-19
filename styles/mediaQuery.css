@@ -56,7 +56,6 @@
         .visible-link{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            color: white;
             margin: 10px 70px;
             gap: 20px;
         }
