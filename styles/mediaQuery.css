@@ -1,5 +1,5 @@
         /* Responsive for tablet */
- @media screen and (min-width:426px) and (max-width:769px) {
+ @media screen and (min-width:426px) and (max-width:768px) {
     .nav,
     .nav-menu,
     .online-game-container,

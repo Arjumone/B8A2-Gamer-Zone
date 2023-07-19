@@ -192,6 +192,7 @@ span{
     width: 100%;  
 }
 .play-container{
+    gap: 200px;
     align-items: center;
     display: flex;
     padding: 30px 200px;
