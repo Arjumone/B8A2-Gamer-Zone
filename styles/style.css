@@ -50,14 +50,14 @@ span{
 
    /* banner style start */
 .banner{
-    background-image: url(../images/Group14.png);
-    background-repeat: no-repeat;
+   
  display: flex;
  justify-content: space-between;
  gap: 60px;
  padding: 0px 100px 50px;
 }
-.banner-left{  
+.banner-left{
+    background-image: url(../images/Group14.png);
   background-repeat: no-repeat;
   width: 50%;
   text-align: center;
@@ -221,7 +221,6 @@ span{
 /* btn style start */
 .btn-section{
     margin-top:200px;
-    text-align: center;
     width: 100%;
     margin: 0 auto;
 }
@@ -229,7 +228,12 @@ span{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     padding: 100px;
+}
+.btn-container button{
+    justify-content: center;
+    align-items: center;
 }
 button img{
     height: 20px;
