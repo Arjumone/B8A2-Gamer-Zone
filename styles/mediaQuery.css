@@ -56,8 +56,14 @@
         .visible-link{
             display: grid;
             grid-template-columns: repeat(3,1fr);
+
             margin: 10px 70px;
             gap: 20px;
+        }
+        .btn-container button:hover{
+            border: 1px solid #ff42a5;
+            color: #ff42a5;
+            cursor: pointer;
         }
 }
           /* Responsive for mobile device */
@@ -131,10 +137,16 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
+    padding: 30px 40px;
     }
 .btn-container button{
-   padding: 5px 25px;
+   padding: 5px 10px;
 } 
+.btn-container button:hover{
+    border: 1px solid #ff42a5;
+    color: #ff42a5;
+    cursor: pointer;
+}
 footer{
     align-items: center;
     height: 100%;
