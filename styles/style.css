@@ -3,14 +3,12 @@ body{
     font-family: 'Work Sans', sans-serif;
     
 }
-header{
-    max-width: 1140px;
-    margin: 0 auto;
-}
+/* navbar style start */
 .nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: rgb(240, 239, 238);
 }
 .nav-logo{
     display: flex;
@@ -48,7 +46,9 @@ span{
    .fa-youtube{
     color: red;
    }
-   
+   /* navbar style end */
+
+   /* banner style start */
 .banner{
  display: flex;
  justify-content: space-between;
@@ -114,13 +114,14 @@ span{
     padding: 12px 25px;
     border: none;
 }
+   /* banner style end */
+
+/* online style start */
 .online-section{
-    
-   margin-top: 20px; 
+    margin-top: 20px; 
 }
 .online-content{
-    text-align: center;
-    
+    text-align: center; 
 }
 .funny{
     background-image: linear-gradient(to bottom,#e893cf,#9376e0);
@@ -132,77 +133,113 @@ span{
 .online-game-container{
     display: flex;
     margin: 20px 200px 0px 200px;
-    gap:24px;
+    gap:20px;
 }
 .card img{
     width: 100%;
-    height: 100%;
+    height: 200px;
     
 }
-/* .play-section{
-    width: 1140px;
-    margin: 0 auto;
+.card{
+    position: relative;
+    width: 300px;
 }
-
-.play-container{
+.card .image-container{
+  position: relative;
+  overflow: hidden;
     
-    margin-top: 150px;
+}
+.card .hover-img{
+    width: 100%;
+    height: 200px;
+}
+.overlay{
     display: flex;
-    height: 400px;
-    padding: 0px 100px;
-    
-    
-}.play-content{
-  width: 50%;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 200px 50px 0px;
+}
+.card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card .overlay{
+    color: white;
+    font-size: 40px;
+}
+.card .overlay p{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover p{
+    color: #ff42a5;
+}
+/* online style end */
+
+/* play section style start */
+.play-section{
+    margin-top: 100px;
+    width: 100%;  
+}
+.play-container{
+    align-items: center;
+    display: flex;
+    padding: 30px 200px;
+}
+.play-content{
+ width: 50%;
+}
+.play-content h2 span{
+    color: #ff42a5;
 }
 .play-img{
-    width: 50%;
+   position: relative;
 }
 .play-img img{
-  width: 100%;
-  height: 100%; 
-  padding: 50px;
-  position: relative;
-  top: -270px;
+  height: 50%;
+  width: 80%;
+}
+.play-img div{
+    position: absolute;
+    bottom: -60px;
+    left: -80px;
+}
+.play-img .play-img2{
+    height: 200px;
+    width: 200px;
+}
+/* play section style end */
 
-  
-}
-.play-img2{
-    width: 20px;
-    height: 20px;
-   position: absolute;
-   bottom: 240px;
-   right: 50px;
-   
-   
-}
-.play-img2 img{
-   
-} */
+/* btn style start */
 .btn-section{
     margin-top:200px;
-    gap: 20px;
-    width: 1140px;
+    text-align: center;
+    width: 100%;
     margin: 0 auto;
 }
 .btn-container{
+    display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
     padding: 100px;
-   
 }
 button img{
     height: 20px;
     width: 20px;
-   
+    margin-right: 5px;
 }
 .btn-container button {
-    
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 20px;
     border-radius: 20px;
     border: none;
     padding: 5px 10px;
@@ -210,27 +247,25 @@ button img{
 .btn-container button:hover{
     border: 1px solid #ff42a5;
     color: #ff42a5;
+    cursor: pointer;
 }
+/* btn style end */
 
-
-
-
-
-/* footer section style */
+/* footer style start */
 footer{
-    margin-top: 300px;
+    margin-top: 50px;
     margin-bottom: 0px;
     background-color: black;
     color: white;
     width: 100%;
-height: 300px
+    height: 300px;
 }
 .footer{
     display: flex;
     justify-content: center;
-    gap: 10px;
     align-items: center;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    gap: 10px;
 }
 .footer-img{
     width: 4rem;
@@ -238,32 +273,39 @@ height: 300px
 }
 .footer h2 span{
     color: #ff42a5;
-    
 }
 .footer h2{
     font-weight: 700;
     font-size: 2rem;
 }
 .footer-name{
-   display: grid;
-   grid-template-columns: repeat(6, 1fr);
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .visiable-link{
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     color: white;
+    margin: 10px 500px;
 }
-.visiable-link a{
-    margin-right: 20px;
+.visiable-link i{
     color: white;
 }
 .footer-title{
     display: flex;
     justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .footer-title p{
-    margin-right: 20px;
+    margin: 5px 0;
 }
 .footer-description p{
     text-align: center;
-    margin-bottom: 120px;
+    padding-bottom: 50px;
 }
+/* footer style end */
