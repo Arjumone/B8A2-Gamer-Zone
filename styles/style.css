@@ -5,10 +5,11 @@ body{
 }
 /* navbar style start */
 .nav{
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(240, 239, 238);
+    background-color: rgb(253, 252, 251);
 }
 .nav-logo{
     display: flex;
@@ -50,18 +51,19 @@ span{
 
    /* banner style start */
 .banner{
+    background-image: url(../images/Group14.png);
+    background-repeat: no-repeat;
  display: flex;
  justify-content: space-between;
- 
- 
  gap: 60px;
- padding: 50px 100px;
+ padding: 0px 100px 50px;
 
 }
 .banner-left{
-    background-image: url(../images/Group14.png);
+    
  background-repeat: no-repeat;
     width: 50%;
+    text-align: center;
 }
 .banner-right{
    width: 50%;
@@ -118,7 +120,7 @@ span{
 
 /* online style start */
 .online-section{
-    margin-top: 20px; 
+    margin-top: 120px; 
 }
 .online-content{
     text-align: center; 
@@ -286,13 +288,13 @@ footer{
     gap: 20px;
     flex-wrap: wrap;
 }
-.visiable-link{
+.visible-link{
     display: grid;
     grid-template-columns: repeat(6,1fr);
     color: white;
     margin: 10px 500px;
 }
-.visiable-link i{
+.visible-link i{
     color: white;
 }
 .footer-title{
