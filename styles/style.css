@@ -176,6 +176,7 @@ span{
 
 /* play section style start */
 .play-section{
+    height: 500px;
     background: #FFF;
     margin-top: 100px;
     width: 100%;  
@@ -184,10 +185,11 @@ span{
     gap: 200px;
     align-items: center;
     display: flex;
-    padding: 30px 200px;
+    padding: 0px 180px;
 }
 .play-content{
  width: 50%;
+
 }
 .play-content h2 span{
     color: #ff42a5;
