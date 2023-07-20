@@ -13,6 +13,12 @@
     }
     .nav {
         height: 100%;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .nav-menu li{
+        margin-bottom: 10px;
+        
     }
     .banner{
         flex-direction: column-reverse;

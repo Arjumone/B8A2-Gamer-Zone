@@ -144,13 +144,6 @@ span{
   position: relative;
   overflow: hidden;
 }
-.card .hover-img{
-    width: 100%;
-    height: 200px;
-}
-.overlay{
-    display: flex;
-}
 .card .overlay{
     position: absolute;
     top: 0;
