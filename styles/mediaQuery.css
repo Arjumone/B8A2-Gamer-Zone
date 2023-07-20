@@ -11,8 +11,7 @@
     {
         flex-direction: column;
     }
-    .nav 
-    {
+    .nav {
         height: 100%;
     }
     .banner{
@@ -22,6 +21,9 @@
     .banner-left, .banner-right{
         width: 100%;
         text-align: center;
+    }
+    .banner-btn1, .banner-btn2{
+        margin-bottom: 30px;
     }
     .online-game-container{
         margin: 20px 60px;
@@ -42,6 +44,11 @@
         grid-template-columns: repeat(3,1fr);
         align-items: center;
         }
+        .btn-container button:hover{
+            border: 1px solid #ff42a5;
+            color: #ff42a5;
+            cursor: pointer;
+        }
         footer{
             align-items: center;
             height: 100%;
@@ -56,15 +63,10 @@
         .visible-link{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-
             margin: 10px 70px;
             gap: 20px;
         }
-        .btn-container button:hover{
-            border: 1px solid #ff42a5;
-            color: #ff42a5;
-            cursor: pointer;
-        }
+        
 }
           /* Responsive for mobile device */
 @media screen and (max-width:426px) {
@@ -81,6 +83,7 @@
     }
     .nav{
         margin-top: 50px;
+        height: 100%;
     }
     .banner{
         flex-direction: column-reverse;
